@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="CopyAsHtml.Microsoft.66af208f-0fa4-4ba9-a53a-cd5d3778b0e4" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>CopyAsHtml</DisplayName>
-    <Description>Adds support to copy the selected editor text to clipboard in HTML format.</Description>
+    <Description xml:space="preserve">Adds support to copy the selected editor text to clipboard in HTML format.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,15.0]" />
@@ -11,6 +11,9 @@
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" />
+  </Prerequisites>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
